@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-11T09:46:14 IST" name="Default suite" finished-at="2024-03-11T09:46:22 IST" duration-ms="7633">
+    <groups>
+    </groups>
+    <test started-at="2024-03-11T09:46:14 IST" name="Default test" finished-at="2024-03-11T09:46:22 IST" duration-ms="7633">
+      <class name="testpkgg.Createacctest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testpkgg.Createacctest@5e600dd5]" started-at="2024-03-11T09:46:14 IST" name="setup" finished-at="2024-03-11T09:46:19 IST" duration-ms="4180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signinmtd()[pri:0, instance:testpkgg.Createacctest@5e600dd5]" started-at="2024-03-11T09:46:19 IST" name="signinmtd" finished-at="2024-03-11T09:46:22 IST" duration-ms="3404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinmtd -->
+      </class> <!-- testpkgg.Createacctest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
