@@ -21,7 +21,7 @@ public class Draganddrop {
 	}
 	@Test
 	public void dragdropmtd()
-	{
+	{	driver.manage().window().maximize();
 		WebElement bank=driver.findElement(By.xpath("//*[@id=\"credit2\"]/a"));
 		WebElement account=driver.findElement(By.xpath("//*[@id=\"bank\"]/li"));
 		WebElement Sales=driver.findElement(By.xpath("//*[@id=\"credit1\"]/a"));

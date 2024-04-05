@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testngpkg.ExtendedReports">
+      <class name="Testngpkg.Draganddrop">
         <methods>
-          <include name="fbtitleverification"/>
-          <include name="browserclose"/>
-          <include name="beftest"/>
-          <include name="teardown"/>
-          <include name="setup"/>
+          <include name="dragdropmtd"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Testngpkg.ExtendedReports -->
+      </class> <!-- Testngpkg.Draganddrop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

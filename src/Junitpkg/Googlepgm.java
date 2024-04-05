@@ -23,7 +23,6 @@ public class Googlepgm {
 		WebElement search=driver.findElement(By.name("q"));
 		search.sendKeys("book",Keys.ENTER);
 				
-		
 		//driver.findElement(By.name("books")).click();
 
 		

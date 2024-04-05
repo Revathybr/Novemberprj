@@ -17,23 +17,22 @@ public class Janasyapgm {
 	public void setUp()
 	{
 		driver=new ChromeDriver();
+		driver.get(url);
 
-		
 	}
 	@Test
 	public void pageinfo() throws InterruptedException
 	{
-		String s="Janasya";
-		String actualtitle=driver.getTitle();
 		Thread.sleep(3000);
-		driver.get(url);
-		driver.findElement(By.xpath("//div[@id='HeaderNavigation']/nav/ul/li[1]/a")).click();
-		driver.findElement(By.xpath("//*[@id=\"halo-sidebar\"]/div[2]/div[1]/div[1]")).click();
-		driver.findElement(By.xpath("//*[@id=\"halo-sidebar\"]/div[2]/div[1]/div[2]/div/ul/li[1]")).click();
-		WebElement search=driver.findElement(By.xpath("//input[@id='Search-In-Modal']"));
+		driver.findElement(By.xpath("//*[@id=\"HeaderNavigation\"]/nav/ul/li[1]/a/span")).click();
+		driver.findElement(By.xpath("//*[@id=\"halo-sidebar\"]/div[2]/div[1]/div[1]/h3")).click();
+		driver.findElement(By.xpath("//*[@id=\"halo-sidebar\"]/div[2]/div[1]/div[2]/div/ul/li[1]/a/span")).click();
+		WebElement search=driver.findElement(By.xpath("//*[@id=\"Layer_1\"]]"));
 		search.sendKeys("saree",Keys.ENTER);
 		List<WebElement> linklist= driver.findElements(By.tagName("a"));
 		System.out.println(linklist.size());
+		String s="Janasya";
+		String actualtitle=driver.getTitle();
 		if(s.equals(actualtitle))
 		{
 			System.out.println("pass");

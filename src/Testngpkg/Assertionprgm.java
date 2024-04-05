@@ -19,7 +19,7 @@ public class Assertionprgm {
 	@Test
 	public void titlrverification()
 	{
-		String exp="Facebook";
+		String exp="Facebook – log in or sign up";
 		String actualtitle=driver.getTitle();
 		Assert.assertEquals(actualtitle,exp);
 		System.out.println("test1");

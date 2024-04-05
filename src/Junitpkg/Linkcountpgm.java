@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Linkcountpgm {
 	ChromeDriver driver;
-	String url="https://www.facebook.com";
+	String url="https://www.instagram.com";
 	
 	@Before
 	public void setup()
@@ -22,6 +22,7 @@ public class Linkcountpgm {
 	@Test
 	public void linkcount() throws InterruptedException
 	{
+		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		List<WebElement> linklist= driver.findElements(By.tagName("a"));
 		System.out.println(linklist.size());
